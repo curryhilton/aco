@@ -152,10 +152,4 @@ agg_2017 <- aggregate(dat.2017$Claim.Payment.Amount, by = list(HIC = dat.2017$HI
                       FUN = sum)
 colnames(agg_2017) <- c("HIC", "Yearly.Patient.Spend")
 
-y6 <- subset(agg_2016, Yearly.Patient.Spend < 25000)
-y7 <- subset(agg_2017, Yearly.Patient.Spend < 25000)
 
-l <- list(y6$Yearly.Patient.Spend, y7$Yearly.Patient.Spend)
-names(l) <- c("2016", "2017")
-
-boxplot(l, horizontal = T, col = c("light blue", "grey"))
