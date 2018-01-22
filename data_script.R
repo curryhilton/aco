@@ -127,7 +127,7 @@ agg_17_part <- rbind(part_a_17_agg, part_b_17_agg, part_d_17_agg)
 agg_17_part_join <- join(agg_17_part, esrd, by = "HIC")
 agg_17_part_sort <- agg_17_part_join[order(agg_17_part_join$HIC), ]
 
-write.table(agg_16_part_sort, "~/Projects/ACO_Analytics/aco/Output_Data/agg_16.txt", sep = "\t")
-write.table(agg_17_part_sort, "~/Projects/ACO_Analytics/aco/Output_Data/agg_17.txt", sep = "\t")
+write.csv(agg_16_part_sort, "~/Projects/ACO_Analytics/aco/Output_Data/agg_16.csv", row.names = F)
+write.csv(agg_17_part_sort, "~/Projects/ACO_Analytics/aco/Output_Data/agg_17.csv", row.names = F)
 
 
