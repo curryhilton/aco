@@ -2,8 +2,7 @@
 #
 # TITLE: ACO Analytics
 #
-# DESCRIPTION: A R script to evaluate the YOY performance and overages
-#              based on procedural variation
+# DESCRIPTION: A R script to manage and clean data
 #
 # AUTHOR: Curry W. Hilton
 #         Riaz Hedayati
